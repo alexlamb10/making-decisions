@@ -7,6 +7,12 @@
 */
 
 //CODE HERE
+let lovesCode = true;
+if (lovesCode === true){
+  console.log("I love to code!");
+} else {
+  console.log("Coding has its challenges");
+}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -21,20 +27,30 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysAge > brittanisAge) {
+  console.log(`Amy is older.`);
+} else if (brittanisAge > amysAge) {
+  console.log(`Brittani is older`);
+} else {
+  console.log(`Brittani and Amy are the same age.`);
+}
 
 ////////// PROBLEM 3 //////////
 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
-
+if (amysBirthYear === brittanisBirthYear) {
+  console.log("Amy and Brittani were born in the same year!");
+} else {
+  console.log("Amy and Brittani were not born in the same year.");
+}
 //CODE HERE
 
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
+let temperature = 65
 let rain = true
 
 /*
@@ -43,7 +59,17 @@ let rain = true
 */
 
 //CODE HERE
-
+if (temperature > 80 && rain === true) {
+  console.log("You should wear a t-shirt but take an umbrella");
+} else if (temperature > 80 && rain !== true){
+  console.log("A t-shirt will be fine to wear.");
+} else if (temperature < 80 && temperature > 60 && rain !== true) {
+  console.log('You should wear a light jacket.');
+}else if (temperature < 80 && temperature > 60 && rain === true) {
+  console.log("You should wear a rain-jacket");
+} else if (temperature < 60) {
+  console.log("You should wear a jacket and carry an umbrealla");
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -52,7 +78,9 @@ let rain = true
 */
 
 //CODE HERE
-
+for(let i = 0; i < 10; i++){
+  console.log('hello');
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -61,14 +89,18 @@ let rain = true
 */
 
 //CODE HERE
-
+for(let i = 1; i <= 10; i++){
+  console.log(i);
+}
 
 ////////// PROBLEM 7 //////////
 
 /*
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
-
+for(let i = 10; i >= 0; i--){
+  console.log(i);
+}
 //CODE HERE
 
 let score = 0
@@ -81,7 +113,10 @@ let passingScore = 7
 */
 
 //CODE HERE
-
+while(score < passingScore) {
+  console.log("Your score is not high enough");
+  score++;
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
